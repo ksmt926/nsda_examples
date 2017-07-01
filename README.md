@@ -114,6 +114,7 @@ $ ls in/2005/01/07/*.01
  - R Studio
  https://www.rstudio.com/products/rstudio/download/
 
+![R Studio](./rstudio.png "R Studio")
 ## Reference
 
 #### Network Security Through Data Analysis
