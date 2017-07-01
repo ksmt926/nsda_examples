@@ -115,6 +115,12 @@ $ ls in/2005/01/07/*.01
  https://www.rstudio.com/products/rstudio/download/
 
 ![R Studio](./rstudio.png "R Studio")
+
+#### 分析:統計的仮説検定
+ - 統計的仮説検定：特定のデータセットから証拠に基づいてこの世の挙動に関する主張を評価する作業
+ - 仮説検定では、帰無仮説の棄却に重点
+ - 統計的検定では、帰無仮説の主張に重点（基本としてデータセット内の変数に関連性はない）
+ 
 ## Reference
 
 #### Network Security Through Data Analysis
