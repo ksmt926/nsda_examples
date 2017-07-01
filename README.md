@@ -18,7 +18,7 @@ sda_examples(Network Security Through Data Analysis)
     - イーサネットヘッダで最も重要な領域は、送信元と送信先との2つのMACアドレス
     
     ```
-    tcpdump -i eth0 -s 0 -w result '((src port 80 || src port 443))' && (src net <ip_address>)
+    $ tcpdump -i eth0 -s 0 -w result '((src port 80 || src port 443))' && (src net <ip_address>)
     ```
     
     - NetFlow
@@ -97,8 +97,27 @@ RFC4229(https://www.ietf.org/rfc/rfc4229.txt)の中で、監視に不可欠な�
  - データ構造とレコードのサイズ
    レコードが小さくか構造化されている場合は、カラムナモデル、次にリレーショナルモデル。レコードが大きいか構造化されていない場合には、キーバリューモデル。
 
+## SiLK(System for Internet-Level Knowledge)
+NetFlowデータの問い合わせや分析を行うためのツール群。処理はバイナリ表現で処理して、最後の最後でのみテキスト表現になる。
+
+```
+$ tar -zxvf SiLK-LBNL-05-nonscan.tar.gz
+$ tar -zxvf SiLK-LBNL-05-scanners.tar.gz
+$ cd SiLK-LBNL-05
+$ ls in/2005/01/07/*.01
+>>> in/2005/01/07/in-S0_20050107.01	in/2005/01/07/in-S1_20050107.01
+```
+
+### R言語の環境構築
+ - R 言語
+ https://cran.r-project.org/bin/macosx/
+ - R Studio
+ https://www.rstudio.com/products/rstudio/download/
+
 ## Reference
 
 #### Network Security Through Data Analysis
 http://shop.oreilly.com/product/0636920028444.do
 
+#### SiLK(System for Internet-Level Knowledge)
+https://tools.netsa.cert.org/silk/license.html
